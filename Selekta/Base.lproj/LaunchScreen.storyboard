@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spl.png" translatesAutoresizingMaskIntoConstraints="NO" id="m3j-mI-LbS">
+                                <rect key="frame" x="-8" y="0.0" width="362" height="540"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJX-KX-BrI">
+                                <rect key="frame" x="97" y="95" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="PrT-XV-ybX"/>
+                                    <constraint firstAttribute="height" constant="130" id="fmX-8x-QIO"/>
+                                </constraints>
+                                <state key="normal" image="selekta_black.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m3j-mI-LbS" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" constant="60" id="F8V-LT-chC"/>
+                            <constraint firstItem="yJX-KX-BrI" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-80" id="I5r-vR-sMK"/>
+                            <constraint firstItem="yJX-KX-BrI" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="75" id="KWz-zm-FqN"/>
+                            <constraint firstItem="yJX-KX-BrI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="2" id="N0C-2x-F4o"/>
+                            <constraint firstItem="m3j-mI-LbS" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="VAi-1A-hNM"/>
+                            <constraint firstItem="m3j-mI-LbS" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-8" id="kYl-I2-UXN"/>
+                            <constraint firstItem="m3j-mI-LbS" firstAttribute="centerX" secondItem="yJX-KX-BrI" secondAttribute="centerX" constant="11" id="sys-YV-1dD"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="KWz-zm-FqN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="selekta_black.png" width="635" height="635"/>
+        <image name="spl.png" width="367" height="609"/>
+    </resources>
+</document>
